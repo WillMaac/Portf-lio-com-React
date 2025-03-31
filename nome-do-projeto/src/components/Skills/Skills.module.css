@@ -1,0 +1,17 @@
+.container{
+    text-align: center;
+    position: relative;
+    background-color: #081A35;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.skillImage {
+    width: 100px;
+    height: 50px;
+  }
