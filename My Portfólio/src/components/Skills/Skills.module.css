@@ -1,0 +1,53 @@
+.container {
+  text-align: center;
+  position: relative;
+  background-color: #081a35;
+  overflow: hidden;
+  width: 100%;
+  border: 2px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.skillImage {
+  width: 50px;
+  height: 50px;
+}
+
+.tec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #091d39;
+  width: 0;
+  margin: 0 auto;
+  animation: typing 9s steps(200, end) forwards, pause 1s forwards 9s,
+    erasing 10s steps(200, end) forwards 10s, blink 0.5s step-end infinite;
+  animation-iteration-count: infinite;
+  gap: 30px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 68%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
