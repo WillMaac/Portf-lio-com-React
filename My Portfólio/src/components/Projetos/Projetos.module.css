@@ -1,0 +1,90 @@
+@import "../../vars.css";
+
+.container{
+    text-align: center;
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    padding: 178px;
+    
+}
+
+.gridProjetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    justify-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+
+.projects{
+    width: 386px;
+    height: 500px;
+}
+
+.containerPhoto{
+    width: 390px;
+    height: 665px;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #081A35;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.containerPhoto:hover{
+    transform: scale(1.1);
+}
+
+.fotoTec{
+    width: 60px;
+    height: 40px;
+}
+    
+.tec{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+
+.containerBtn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 150px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background: #080F19;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+border: none;    
+}
+
+.btn:hover{
+    background-color: greenyellow;
+}
+
+.title{
+    position: relative;
+    top: -130px;
+    color: white;
+    text-align: center;
+}
+
