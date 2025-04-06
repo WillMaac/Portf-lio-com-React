@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import menuIcon from "../../assets/nav/menuIcon.png";
 import closeIcon from "../../assets/nav/closeIcon.png";
@@ -23,13 +24,14 @@ export const NavBar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
             <a href="#sobre">Sobre</a>
           </li>
           <li>
             <a href="#projetos">Projetos</a>
-          </li>
-          <li>
-            <a href="#experiencia">Experiência</a>
           </li>
           <li>
             <a href="#contatos">Contatos</a>

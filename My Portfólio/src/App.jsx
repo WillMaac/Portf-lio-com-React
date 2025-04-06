@@ -1,18 +1,26 @@
 import styles from "./App.module.css";
-import { About } from "./components/About/About";
-import { Headeader } from "./components/Header/Header";
+import { About } from "./pages/About/About";
+import { Headeader } from "./pages/Header/Header";
 import { NavBar } from "./components/NavBar/NavBar";
-import { Projetos } from "./components/Projetos/Projetos";
+import { Projetos } from "./pages/Projetos/Projetos";
 import { Skills } from "./components/Skills/Skills";
+import { Contact } from "./pages/Contact/Contact";
 
 function App() {
   return (
     <div className={styles.App}>
       <NavBar />
       <Headeader/>
-      <About/>
+      <div id="sobre">
+        <About />
+      </div>
       <Skills/>
-      <Projetos/>
+      <div id="projetos">
+        <Projetos />
+      </div>
+      <div id="contatos">
+        <Contact />
+      </div>
     </div>
   );
 }
