@@ -12,7 +12,7 @@ import { AccordionCard } from "../AccordionCard/AccordionCard";
 export const Skills = () => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>Hard-Skills</h2>
+      <h2 className={styles.title1}>Hard-<span>Skills</span></h2>
       <div className={styles.teste}>
         <div className={styles.tec}>
           <img src={html5Image} alt="HTML5" className={styles.skillImage} />
@@ -28,8 +28,9 @@ export const Skills = () => {
           <img src={GitImage} alt="Git" className={styles.skillImage} />
           <img src={GitHubImage} alt="GitHub" className={styles.skillImage} />
         </div>
-        <h2 className={styles.title}>Soft-Skills</h2>
+        <h2 className={styles.title2}>Soft-<span>Skills</span></h2>
         <div>
+          <div className={styles.cardSkills}>
       <AccordionCard
         titulo="Trabalho em Equipe"
         conteudo="Saber colaborar com colegas, ouvir opiniões diferentes e trabalhar em conjunto para atingir objetivos comuns."
@@ -63,6 +64,7 @@ export const Skills = () => {
         titulo="Paciência e Resiliência"
         conteudo="Nem sempre as coisas funcionam à primeira (quem nunca ficou horas com um bug?), por isso é essencial manter a calma e persistir."
       />
+      </div>
     </div>
       </div>
     </section>

@@ -1,7 +1,9 @@
 .accordionContainer {
-    display: flex;
+  position: relative;  
+  display: flex;
     flex-direction: column;
     gap: 1rem;
+    top: -900px;
   }
   
   .card {
@@ -10,6 +12,7 @@
     box-shadow: 4px 4px 0px #a855f7;
     background-color: white;
     overflow: hidden;
+    margin-top: 20px;
   }
   
   .button {

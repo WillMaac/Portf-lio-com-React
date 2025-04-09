@@ -2,11 +2,13 @@ import styles from "./Contact.module.css"
 import Email from "../../assets/img/emailcon.png"
 import Linkedin from "../../assets/img/linkedincon.png"
 import GitHub from "../../assets/img/githubcon.png"
+import FormContact from "../../components/Form/FormContact"
 export const Contact = () =>{
     return(
         <section className={styles.container}>
             <h1 className={styles.title}>Contatos</h1>
         <div className={styles.containerIcone}>
+            <div className={styles.gg}>
             <ul>
             <li>
     <a 
@@ -41,6 +43,10 @@ export const Contact = () =>{
     </a>
 </li>
             </ul>
+            </div>
+<div className={styles.tt}>
+            <FormContact/>
+            </div>
         </div>
         <div>
             <p className={styles.footer}>&copy;2025 Anderson De Jesus. Todos os direitos reservados.</p>
