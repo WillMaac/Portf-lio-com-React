@@ -10,6 +10,8 @@
     box-shadow: 4px 4px 0px #a855f7;
     background-color: white;
     overflow: hidden;
+    max-width: 400px;
+    margin: 1rem auto;
   }
   
   .button {
@@ -37,8 +39,15 @@
   }
   
   .content {
-    padding: 0 10rem 1rem;
+    padding: 0 2rem 1rem;
     font-size: 0.98rem;
     color: black;
+    display: block;
+    text-align: justify;
+    height: 100%;
+  }
+
+  .content p{
+    margin-top: 20px;
   }
   
