@@ -1,0 +1,17 @@
+.container{
+    background-color: #90909085;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 49px;
+        z-index: 1;
+        margin-right: 10%;
+      }
+
+      p{
+        font-size: 20px;
+      }

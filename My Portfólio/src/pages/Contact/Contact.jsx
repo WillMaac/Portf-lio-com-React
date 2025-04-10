@@ -42,6 +42,9 @@ export const Contact = () =>{
 </li>
             </ul>
         </div>
+        <div>
+            <p className={styles.footer}>&copy;2025 Anderson De Jesus. Todos os direitos reservados.</p>
+        </div>
         </section>
     )
 }

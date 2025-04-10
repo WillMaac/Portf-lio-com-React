@@ -38,3 +38,11 @@
 span{
     color: #ffffff;
 }
+
+.cardsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* importante para responsividade */
+    padding: 40px 0;
+  }

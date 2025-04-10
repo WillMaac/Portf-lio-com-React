@@ -5,16 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 11px;
+    padding-top: 11px; /*11px antigamente*/
     z-index: 2;
-    margin: 0 1%;
+    margin: 0 1%; /*1%* anterior*/
 }
 
 .title{
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-text)
 }
 
 .menuBtn {
@@ -28,7 +28,7 @@
 
 .items{
     display: flex;
-    gap: 80px;
+    gap: 100px;
     list-style: none;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .items a:hover{
-    border-bottom: 2px solid greenyellow;
+    color:greenyellow;
 }
 
 @media screen and (max-width: 830px) {

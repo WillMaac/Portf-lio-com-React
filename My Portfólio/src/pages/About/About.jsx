@@ -1,4 +1,5 @@
  import styles from "./About.module.css";
+ import {Card} from "../../components/Cards/Card"
 
 
 export const About = () =>{
@@ -11,6 +12,30 @@ return(
     </p>
     
 </div>
+
+<div className={styles.cardsContainer}>
+{/* 👇 Seção nova com os Cards */}
+      <div id="informacoes" className={styles.cardsContainer}>
+        <Card
+          titulo="Currículo"
+          descricao="Apresento meus conhecimentos adquiridos, formações e experiências práticas."
+          textoBotao="Baixar CV"
+          onClick={() => alert("Baixando CV...")}
+        />
+        <Card
+          titulo="Certificados"
+          descricao="Certificados de plataformas como Alura, FIAP, Udemy, etc."
+          textoBotao="Ver Certificados"
+          onClick={() => alert("Abrindo certificados...")}
+        />
+        <Card
+          titulo="Experiência"
+          descricao="Experiência prática com empresas reais e soluções tecnológicas."
+          textoBotao="Ver Experiência"
+          onClick={() => alert("Mostrando experiência...")}
+        />
+      </div>
+      </div>
     </section>
 )
 } 

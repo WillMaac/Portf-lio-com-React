@@ -10,18 +10,28 @@ function App() {
   return (
     <div className={styles.App}>
       <NavBar />
-      <Headeader/>
+
+      <div id="home">
+        <Headeader />
+      </div>
+
       <div id="sobre">
         <About />
       </div>
-      <Skills/>
+
+      <Skills />
+
       <div id="projetos">
         <Projetos />
       </div>
+
       <div id="contatos">
         <Contact />
       </div>
+
+      
     </div>
   );
 }
+
 export default App;
