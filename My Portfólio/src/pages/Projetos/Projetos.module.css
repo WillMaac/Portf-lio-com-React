@@ -8,8 +8,8 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    border-radius: 20px;
     padding: 178px;
+    box-shadow: 0 0 40px 10px greenyellow;
     
 }
 
@@ -88,3 +88,22 @@ border: none;
     text-align: center;
 }
 
+@media screen and (max-width: 768px){
+    .gridProjetos{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .container{
+        padding: 50px 20px;
+        gap: 40px; 
+    }
+        
+      }
+    
+      @media screen and (max-width: 480px){
+        
+      }
