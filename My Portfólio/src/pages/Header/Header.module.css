@@ -10,6 +10,7 @@
   margin-top: 49px;
   z-index: 1;
   margin-right: 10%;
+  flex-direction: row;
 }
 
 .content {
@@ -78,15 +79,19 @@ a{
 .description {
   font-family: Arial, sans-serif;
   font-size: 28px;
+  color: white;
+  width: 22ch;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 1px solid #091d39;
-  width: 0;
-  margin: 0 auto;
-  animation: typing 8s steps(40, end) forwards, pause 1s forwards 8s,
-    erasing 8s steps(40, end) forwards 9s, blink 0.5s step-end infinite;
-  animation-iteration-count: infinite;
+  border-right: 3px solid #04152C;
+  animation: typing 4s steps(22) 1s infinite alternate,
+             blink 0.7s step-end infinite;
 }
+
+
+
+
+
 
 .fotoPerfil {
   position: relative;
@@ -102,6 +107,9 @@ a{
   background-color: rgb(80, 153, 32);
 }
 
+
+/*Efeito da foto*/
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -114,15 +122,14 @@ a{
   }
 }
 
+/*Efeito da palavra front*/
+
 @keyframes typing {
-  0% {
+  from {
     width: 0;
   }
-  50% {
-    width: 65%;
-  }
-  100% {
-    width: 0;
+  to {
+    width: 22ch;
   }
 }
 
@@ -131,6 +138,7 @@ a{
     border-color: transparent;
   }
 }
+
 
 .topBur {
   position: absolute;
@@ -156,4 +164,41 @@ a{
   .content {
     align-items: center;
   }
+}
+
+
+
+@media screen and (max-width: 768px){
+  .container{
+    flex-direction: column-reverse;
+    text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 0;
+  }
+
+  .fotoPerfil{
+    top: unset;
+    right: unset;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 480px){
+  .container{
+    flex-direction: column-reverse;
+    text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 0;
+  }
+
+  .fotoPerfil{
+    top: unset;
+    right: unset;
+    margin-bottom: 20px;
+  }
+
 }
