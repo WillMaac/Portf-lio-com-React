@@ -80,7 +80,7 @@ a{
   font-family: Arial, sans-serif;
   font-size: 28px;
   color: white;
-  width: 22ch;
+  max-width: 22ch;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #04152C;
@@ -93,10 +93,10 @@ a{
 
 
 
-.fotoPerfil {
+ .fotoPerfil {
   position: relative;
   top: -13px;
-  right: -350px;
+  right: -320px;
   width: 320px;
   z-index: 1;
   animation-name: floating;
@@ -156,7 +156,7 @@ a{
 
 
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
   }
@@ -164,11 +164,45 @@ a{
   .content {
     align-items: center;
   }
+
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .title1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contactBtn {
+    font-size: 20px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 12px 16px;
+  }
+
+  .description {
+    font-size: 20px;
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .fotoPerfil {
+    width: 200px;
+    margin: 0 auto 20px;
+    top: unset;
+    right: unset;
+    margin-bottom: 20px;
+  }
 }
 
 
 
-@media screen and (max-width: 768px){
+
+/*@media screen and (max-width: 1024px){
   .container{
     flex-direction: column-reverse;
     text-align: center;
@@ -185,7 +219,7 @@ a{
 
 }
 
-
+/*
 @media screen and (max-width: 480px){
   .container{
     flex-direction: column-reverse;
@@ -201,4 +235,4 @@ a{
     margin-bottom: 20px;
   }
 
-}
+}*/

@@ -5,7 +5,7 @@
   overflow: hidden;
   width: 100%;
   border: 2px;
-  box-shadow: 0 0 40px 10px greenyellow;
+  box-shadow: 0 0 40px 10px #FFFFFF;
 }
 
 .title {
